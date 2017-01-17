@@ -1,0 +1,33 @@
+.box {
+  margin: auto;
+  border: 1px solid black;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.myheight {
+  height: 600px;
+}
+
+@media (max-height: 500px) {
+  .myheight {
+    height: 400px;
+  }
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+#outer {
+  width: 50%;
+  justify-content: center;
+  border: 1px solid red;
+  flex-direction: column;
+}
+
+button {
+  flex: 1;
+}
