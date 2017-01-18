@@ -1,3 +1,7 @@
+button {
+  border: 1px solid blue;
+}
+
 .box {
   margin: auto;
   border: 1px solid black;
@@ -27,7 +31,15 @@
   border: 1px solid red;
   flex-direction: column;
 }
+#outer .flex-container {
+  justify-content: space-around;
+}
 
-button {
-  flex: 1;
+button div {
+  align-items: center;
+}
+button div img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }

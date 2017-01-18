@@ -2,8 +2,10 @@
 div.flex-container.center.myheight
   div#outer
     div.flex-container
-      button Twitter
-      button New quote
+      button.btn.btn-primary
+        div.flex-container
+          img(src="https://res.cloudinary.com/jrutley/image/upload/v1484706785/Twitter-Download-PNG_q7el94.png") 
+          | Tweet this!
+      button#newQuote New quote
     div.box
-      div
-        | Insert quote here
+      div#quote Insert quote here
