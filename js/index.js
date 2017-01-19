@@ -1,10 +1,17 @@
 function retrieveQuote(){
-    $.ajax("https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en", function(resp){
-      console.log("YO");
-    $("#quote").Html = "Hello"; //resp.quoteText;
+  $.ajax({
+    method: "GET",
+    url: "http://api.icndb.com/jokes/random",
+    dataType: "json",
+    success: function (data) {
+    $("#quote").html(data.value.joke);
+    },
+    error: function(err){
+      console.log(err)
+    }
   });
 }
-
+  
 $('document').ready(function(){
   $('#newQuote').on("click", function(){
     retrieveQuote();

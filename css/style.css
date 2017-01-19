@@ -1,3 +1,7 @@
+body {
+  font-family: 'Graduate', cursive;
+}
+
 button {
   border: 1px solid blue;
 }
@@ -33,6 +37,10 @@ button {
 }
 #outer .flex-container {
   justify-content: space-around;
+}
+
+#quote {
+  font-size: 2em;
 }
 
 button div {
