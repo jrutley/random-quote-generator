@@ -4,7 +4,9 @@ function retrieveQuote(){
     url: "http://api.icndb.com/jokes/random",
     dataType: "json",
     success: function (data) {
-    $("#quote").html(data.value.joke);
+      var twitterLink = "https://twitter.com/intent/tweet?text=" + data.value.joke;
+      $("#tweetlink").href=twitterLink;
+      $("#quote").html(data.value.joke);
     },
     error: function(err){
       console.log(err)

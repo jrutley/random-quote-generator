@@ -2,6 +2,11 @@ body {
   font-family: 'Graduate', cursive;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 button {
   border: 1px solid blue;
 }
