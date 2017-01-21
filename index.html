@@ -14,17 +14,13 @@
 
 <body>
   
-<div class="flex-container center myheight">
-  <div id="outer">
-    <div class="flex-container">
-      <button class="btn btn-primary">
-        <div class="flex-container"><img src="https://res.cloudinary.com/jrutley/image/upload/v1484706785/Twitter-Download-PNG_q7el94.png"/>Tweet this!</div>
-      </button>
-      <button class="btn btn-success" id="newQuote">New quote</button>
-    </div>
-    <div class="box">
-      <div id="quote">Insert quote here</div>
-    </div>
+<div id="outer">
+  <div id="button-container">
+    <button class="btn btn-primary">
+      <div class="flex-container" id="tweet-this"><a id="tweetlink" href="https://twitter.com/intent/tweet?text=IloveChuckNorris" target="_blank"><img src="https://res.cloudinary.com/jrutley/image/upload/v1484706785/Twitter-Download-PNG_q7el94.png"/>Tweet this!</a></div>
+    </button>
+    <button class="btn btn-success" id="newQuote">New quote</button>
+    <div id="quote">Insert quote here</div>
   </div>
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>

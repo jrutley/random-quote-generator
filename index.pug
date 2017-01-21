@@ -1,10 +1,9 @@
-div.flex-container.center.myheight
-  div#outer
-    div.flex-container
+div#outer
+    div#button-container
       button.btn.btn-primary
-        div.flex-container
-          img(src="https://res.cloudinary.com/jrutley/image/upload/v1484706785/Twitter-Download-PNG_q7el94.png") 
-          | Tweet this!
+        div.flex-container#tweet-this
+          a(id="tweetlink" href="https://twitter.com/intent/tweet?text=IloveChuckNorris" target="_blank")
+           img(src="https://res.cloudinary.com/jrutley/image/upload/v1484706785/Twitter-Download-PNG_q7el94.png") 
+           | Tweet this!
       button.btn.btn-success#newQuote New quote
-    div.box
       div#quote Insert quote here
