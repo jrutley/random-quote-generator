@@ -1,9 +1,10 @@
-div#outer
+div.outer
+  div#content-wrapper
     div#button-container
       button.btn.btn-primary
-        div.flex-container#tweet-this
+        div#tweet-this
           a(id="tweetlink" href="https://twitter.com/intent/tweet?text=IloveChuckNorris" target="_blank")
-           img(src="https://res.cloudinary.com/jrutley/image/upload/v1484706785/Twitter-Download-PNG_q7el94.png") 
-           | Tweet this!
+             img(src="https://res.cloudinary.com/jrutley/image/upload/v1484706785/Twitter-Download-PNG_q7el94.png") 
+             | Tweet this!
       button.btn.btn-success#newQuote New quote
-      div#quote Insert quote here
+    div#quote Insert quote here

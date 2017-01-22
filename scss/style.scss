@@ -1,32 +1,32 @@
 body {
   font-family: 'Graduate', cursive;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
   color: white;
 }
-button{
-  border: 1px solid blue;
-}
 
 .flex-container {
   display: flex;
 }
 
+#content-wrapper {
+  margin-top: 20vh;
+  width: 100%;
+}
 
-#outer {
-  width: 400px;
+.outer {
+  max-width: 400px;
   height: 100vh;
   border: 1px solid blue;
 }
 
 #quote {
   font-size: 2em;
+  border: 1px solid black;
 }
 
 button {
@@ -40,5 +40,7 @@ button {
   }
 }
 #button-container{
+  display: flex;
+  justify-content: space-around;
   border: 2px red solid;
 }
