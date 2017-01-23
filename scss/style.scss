@@ -2,8 +2,15 @@ body {
   font-family: 'Graduate', cursive;
   display: flex;
   justify-content: center;
+  background-color: #ffff00;
 }
 
+#bangcontainer {
+  width: 80%;
+  margin: auto;
+  z-index: 1;
+  position: fixed;
+}
 a {
   text-decoration: none;
   color: white;
@@ -13,23 +20,40 @@ a {
   display: flex;
 }
 
+svg {
+  max-width: 100%;
+  max-height: 100%;
+  path { stroke: none; }
+  #outerbang {
+     fill:#ff0000;
+  }
+  #middlebang {
+    fill:#ff8000;
+  }
+  #innerbang {
+    fill:#ffff00;
+  }
+}
+
 #content-wrapper {
-  margin-top: 20vh;
+  margin-top: 37vh;
   width: 100%;
 }
 
 .outer {
+  z-index: 2;
   max-width: 400px;
   height: 100vh;
-  border: 1px solid blue;
 }
 
 #quote {
   font-size: 2em;
-  border: 1px solid black;
+  background-color: #ffff00;
 }
 
 button {
+  background-color: orange;
+  border: 5px solid black;
   div {
     align-items: center;
     img {
@@ -42,5 +66,4 @@ button {
 #button-container{
   display: flex;
   justify-content: space-around;
-  border: 2px red solid;
 }
